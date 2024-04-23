@@ -145,6 +145,20 @@ div.volumed {
     align-self: center;
 }
 
+#img-download {
+    width: 18px;
+    margin-right: .6rem;
+
+}
+
+#img-profile {
+    width: 25px;
+    height: 25px;
+    margin-right: .6rem;
+    background-color: #808080;
+    border-radius: 50%;
+}
+
 section.volume {
     flex-direction: row-reverse;
 
@@ -170,6 +184,24 @@ section.home li {
     padding-left: 4px;
 }
 
+section.profile li {
+    display: flex;
+    align-items: center;
+}
+
+section.profile li:first-child {
+    margin-bottom: 1rem;
+}
+
+section.profile li:last-child {
+    margin-bottom: .4rem;
+}
+
+section.profile ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
 
 
 .flex {
@@ -220,12 +252,16 @@ section.home li {
     display: none;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 @media screen and (min-width: 576px) {
     header {
         width: 200px;
         height: calc(100vh - 85px);
-        /*Da togliere*/
-        background-color: aqua;
+        color: #707070;
+        background-color: #000000;
     }
 
     main {
@@ -242,8 +278,22 @@ section.home li {
     }
 
     img.no-display,
-    h2.no-display {
+    h2.no-display,
+    div.no-display,
+    h1.no-display,
+    hr.no-display {
         display: inline;
+    }
+
+    div.playlist h1 {
+        display: inline-block;
+    }
+
+
+
+
+    h1 {
+        font-size: .9rem;
     }
 
     h2 {
@@ -252,6 +302,24 @@ section.home li {
 
     section.home li {
         width: 82%;
+    }
+
+    section.profile {
+        padding: 0 15.2px;
+    }
+
+    section.profile li:first-child {
+        border-bottom: 1px solid white;
+        margin-bottom: .6rem;
+        padding-bottom: .6rem;
+    }
+
+    section.profile li:last-child {
+        margin-bottom: .4rem;
+    }
+
+    section.profile ul {
+        display: block;
     }
 }
 
