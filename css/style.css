@@ -59,8 +59,8 @@ footer {
 }
 
 footer img {
-    width: auto;
-    height: calc(100%/3);
+    width: 20%;
+    height: auto;
 }
 
 footer h2 {
@@ -83,9 +83,9 @@ footer h3 {
     height: 100%;
 } */
 
-div.song-author {
+/* div.song-author {
     width: 66%
-}
+} */
 
 section.player nav {
     width: 100%;
@@ -97,7 +97,7 @@ section.name-author i {
 }
 
 div.range-reproduction {
-    width: 60%;
+    width: 80%;
     height: .2em;
     background-color: #5a5a5a;
     cursor: pointer;
@@ -200,25 +200,6 @@ section.volume li {
     color: #5a5a5a;
 }
 
-@media screen and (min-width: 1200px) {
-    header {
-        width: 200px;
-        height: calc(100vh - 85px);
-        /*Da togliere*/
-        background-color: aqua;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    header {
-        width: 200px;
-        height: calc(100vh - 85px);
-        /*Da togliere*/
-        background-color: aqua;
-    }
-}
-
-
 @media screen and (min-width: 576px) {
     header {
         width: 200px;
@@ -226,6 +207,26 @@ section.volume li {
         /*Da togliere*/
         background-color: aqua;
     }
+
+    footer img {
+        height: calc(100%/2);
+        width: auto;
+    }
 }
+
+@media screen and (min-width: 768px) {
+    section.name-author i {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+}
+
+
+
+
+
 
 
