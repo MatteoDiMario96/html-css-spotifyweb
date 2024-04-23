@@ -29,7 +29,7 @@ header {
     width: 60px;
     height: calc(100vh - 85px);
     /*Da togliere*/
-    background-color: aqua;
+    background-color: #000000;
 }
 
 main {
@@ -59,7 +59,7 @@ footer {
 }
 
 footer img {
-    width: 20%;
+    width: 23%;
     height: auto;
 }
 
@@ -154,6 +154,22 @@ section.volume li {
     margin-left: .4rem;
 }
 
+section.home ul {
+    padding: .7rem;
+    width: 100%;
+
+}
+
+section.home li {
+    margin-bottom: .9rem;
+}
+
+.fa-swatchbook,
+.fa-magnifying-glass,
+.fa-house {
+    padding-left: 4px;
+}
+
 
 
 .flex {
@@ -200,6 +216,10 @@ section.volume li {
     color: #5a5a5a;
 }
 
+.no-display {
+    display: none;
+}
+
 @media screen and (min-width: 576px) {
     header {
         width: 200px;
@@ -208,9 +228,30 @@ section.volume li {
         background-color: aqua;
     }
 
+    main {
+        width: calc(100vw - 200px);
+    }
+
     footer img {
         height: calc(100%/2);
         width: auto;
+    }
+
+    img.display {
+        display: none;
+    }
+
+    img.no-display,
+    h2.no-display {
+        display: inline;
+    }
+
+    h2 {
+        font-size: .8rem;
+    }
+
+    section.home li {
+        width: 82%;
     }
 }
 
